@@ -76,7 +76,7 @@ namespace CookieAuthWithIdentity.Core
 
         private DirectoryInfo GetKeyRingDirInfo()
         {
-            return new DirectoryInfo(Path.Combine(Program.KeyRingPath, "KeyRing"));
+            return new DirectoryInfo(Program.KeyRingPath);
         }
     }
 }

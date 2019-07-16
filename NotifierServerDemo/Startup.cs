@@ -41,7 +41,7 @@ namespace NotifierServerDemo
 
         private DirectoryInfo GetKeyRingDirInfo()
         {
-            return new DirectoryInfo(Path.Combine(Program.KeyRingPath, "KeyRing"));
+            return new DirectoryInfo(Program.KeyRingPath);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
