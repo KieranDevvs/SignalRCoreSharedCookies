@@ -69,12 +69,12 @@ namespace NotifierServerDemo
                 .AllowCredentials();
             });
 
+            app.UseAuthentication();
+
             app.UseSignalR(routes =>
             {
                 routes.MapHub<TaskHub>("/taskHub");
             });
-
-            app.UseAuthentication();
         }
     }
 }
